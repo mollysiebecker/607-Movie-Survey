@@ -19,3 +19,5 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.movie_survey
     OWNER to postgres;
+
+SELECT * FROM "movie_survey";
