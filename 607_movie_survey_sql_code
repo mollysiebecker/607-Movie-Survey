@@ -1,0 +1,21 @@
+-- Table: public.movie_survey
+
+-- DROP TABLE IF EXISTS public.movie_survey;
+
+CREATE TABLE IF NOT EXISTS public.movie_survey
+(
+    "Timestamp" timestamp without time zone NOT NULL,
+    "Gender Identity" "char",
+    "The Banshees of Inisherin" integer,
+    "Barbie" integer,
+    "Everything Everywhere All At Once" integer,
+    "Glass Onion: A Knives Out Mystery" integer,
+    "Oppenheimer" integer,
+    "Top Gun: Maverick" integer,
+    CONSTRAINT "607 Movie Survey_pkey" PRIMARY KEY ("Timestamp")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.movie_survey
+    OWNER to postgres;
